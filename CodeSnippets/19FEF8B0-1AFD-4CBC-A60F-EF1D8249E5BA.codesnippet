@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cellinit</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(instancetype)cellWithTableView:(UITableView *)tableView {
+    
+    static NSString* const &lt;#cell#&gt; = @"&lt;#cell#&gt;";
+    
+    [tableView registerNib:[UINib nibWithNibName:@"&lt;#cell#&gt;" bundle:nil] forCellReuseIdentifier:&lt;#cell#&gt;];
+    &lt;#cell#&gt;* cell = [tableView dequeueReusableCellWithIdentifier:&lt;#cell#&gt;];
+    
+    if (!cell) {
+        cell = [[&lt;#cell#&gt; alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:&lt;#cell#&gt;];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    return cell;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>19FEF8B0-1AFD-4CBC-A60F-EF1D8249E5BA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cellWithTable</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
