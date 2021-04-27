@@ -3,23 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>qs_notify</string>
+	<string>qs_label_getter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
+	<string>- (UILabel *)&lt;#title#&gt;Label {
+    if (!_&lt;#title#&gt;Label) {
+        _&lt;#title#&gt;Label = [[UILabel alloc] initWithFrame:(self.bounds)];
+        _&lt;#title#&gt;Label.font = &lt;#Font#&gt;;
+        _&lt;#title#&gt;Label.text = _L(@"&lt;#text#&gt;");
+        _&lt;#title#&gt;Label.textColor = &lt;#color#&gt;;
+        _&lt;#title#&gt;Label.textAlignment = NSTextAlignmentCenter;
+        [_&lt;#title#&gt;Label sizeToFit];
+    }
+    return _&lt;#title#&gt;Label;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>C6347485-73CB-4A15-8C1D-CEE5AB645ED9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>qs notification call back method</string>
+	<string>qs label getter</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>qs notification call back method</string>
+	<string>qs label getter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

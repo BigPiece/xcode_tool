@@ -3,30 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tq_custom_dispatch</string>
+	<string>qs_init_view</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    dispatch_queue_t urls_queue = dispatch_queue_create("com.elctech.image_queue", NULL);
+	<string>- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addViews];
+        [self layout];
+    }
+    return self;
+}
+
+- (void)dealloc {
     
-    dispatch_async(urls_queue, ^{
-        [self getImageUrls];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self downloadImages];
-        });
-    });
+}
+
+- (void)addViews {
     
-    dispatch_release(urls_queue);</string>
+}
+
+- (void)layout {
+    
+}
+
+#pragma mark -
+#pragma mark - Actions
+
+#pragma mark -
+#pragma mark - Setter
+
+#pragma mark -
+#pragma mark - Getter</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1C071233-5D65-4101-9C7C-A43509BB57B8</string>
+	<string>6A9518C3-50B0-4331-AC94-BDC28EA17554</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Custom dispatch queue</string>
+	<string>initView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Custom dispatch queue</string>
+	<string>qs init view</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

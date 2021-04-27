@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>qs_notify</string>
+	<string>qs_imageview_getter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
+	<string>- (UIImageView *)&lt;#imageView#&gt; {
+    if (!_&lt;#imageView#&gt;) {
+        UIImage *image = [[UIImage imageNamed:@"&lt;#name#&gt;"] imageWithRenderingMode:(UIImageRenderingModeAlwaysTemplate)];
+        _&lt;#imageView#&gt; = [[UIImageView alloc] initWithImage:image];
+        _&lt;#imageView#&gt;.frame = &lt;#frame#&gt;;
+        _&lt;#imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+    }
+    return _&lt;#imageView#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>A00A4C5D-BF4F-4ADD-A38D-00D0EE6D822A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>qs notification call back method</string>
+	<string>qs imageview getter</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>qs notification call back method</string>
+	<string>qs imageview getter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

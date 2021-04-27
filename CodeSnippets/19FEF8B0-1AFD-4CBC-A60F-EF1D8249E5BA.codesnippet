@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cellinit</string>
+	<string>qs_cell_init</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -14,6 +14,8 @@
     static NSString* const &lt;#cell#&gt; = @"&lt;#cell#&gt;";
     
     [tableView registerNib:[UINib nibWithNibName:@"&lt;#cell#&gt;" bundle:nil] forCellReuseIdentifier:&lt;#cell#&gt;];
+    [tableView registerClass:[&lt;#CellName#&gt; class] forCellReuseIdentifier:&lt;#cell#&gt;];
+    
     &lt;#cell#&gt;* cell = [tableView dequeueReusableCellWithIdentifier:&lt;#cell#&gt;];
     
     if (!cell) {
@@ -27,8 +29,10 @@
 	<string>19FEF8B0-1AFD-4CBC-A60F-EF1D8249E5BA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>qs cell with table</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cellWithTable</string>
+	<string>qs cell with table</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>qs_button_getter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#name#&gt;Button {
+    if (!_&lt;#name#&gt;Button) {
+        _&lt;#name#&gt;Button = [[UIButton alloc] initWithFrame:&lt;#rect#&gt;];
+        [_&lt;#name#&gt;Button addTarget:self action:@selector(click&lt;#name#&gt;Button:) forControlEvents:(UIControlEventTouchUpInside)];
+        
+        //Title
+        [_&lt;#name#&gt;Button setTitle:@"开始游戏" forState:(UIControlStateNormal)];
+        _&lt;#name#&gt;Button.titleLabel.font = Font(15 * kHScale);
+        [_&lt;#name#&gt;Button setTitleColor:COLOR_COMMON_TEXT forState:(UIControlStateNormal)];
+        
+        //Image
+        UIImage *image = [[UIImage imageNamed:@"&lt;#imageName#&gt;"] imageWithRenderingMode:(UIImageRenderingModeAlwaysTemplate)];
+        [_&lt;#name#&gt;Button setImage:image forState:(UIControlStateNormal)];
+    }
+    return _&lt;#name#&gt;Button;
+}
+
+- (void)click&lt;#name#&gt;Button:(UIButton *)sender {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E987EE5C-2D91-4C53-AEF8-AF133CE6EFEE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>qs button getter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>qs button getter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
